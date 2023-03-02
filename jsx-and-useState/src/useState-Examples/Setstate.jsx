@@ -2,7 +2,8 @@ import {useState} from "react";
 
 export default function Setstate(props){
 
-    const {sandeep, setSandeep} = props;
+
+    const [admin, setAdmin] = useState("Sandeep");
 
     return(
         <>
@@ -11,10 +12,10 @@ export default function Setstate(props){
                     backgroundColor : 'red',
                     color: 'black',
                 }}>
-                    Admin: {sandeep}
+                    Admin: {admin}
                 </h1>
 
-                <button onClick={() => setSandeep("Sandeep K. Dasari")
+                <button onClick={() => setAdmin("Sandeep K. Dasari")
                 }>Change Admin</button>
                 
                 <br />

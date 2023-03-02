@@ -1,13 +1,18 @@
 import {useState} from "react";
-import Setstate from './useState-Examples/Setstate';
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import TodoApp from "./todo-sample-app/TodoApp";
 
 const App = () => {
-    
-    const [admin, setAdmin] = useState("Sandeep");
 
-    return(
-        <Setstate sandeep={admin} setSandeep={setAdmin}/>
-        // <h1>App Component Code</h1>
+    return( 
+        <div className="h-[100vh] w-[100vw]">
+            <Header />
+
+            <TodoApp />
+
+            <Footer />
+        </div>   
     )
 }
 
