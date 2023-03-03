@@ -1,4 +1,3 @@
-import {useState} from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import TodoApp from "./todo-sample-app/TodoApp";
